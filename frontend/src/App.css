@@ -1,0 +1,110 @@
+:root {
+  --primary-color: #0050db;
+  --white: #fff;
+  --red: #f00;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: var(--white);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.head-title {
+  text-align: center;
+  color: var(--white);
+}
+
+.sub-title {
+  font-size: 18px;
+  display: table;
+}
+
+.vdo-block {
+  position: relative;
+  display: inline-block;
+}
+
+.vdo-block .vdo-main {
+  height: 60vh;
+}
+
+.vdo-block .vdo-join-block {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.vdo-block .vdo-join-block .vdo-join {
+  height: 15vh;
+  border: 1px solid !important;
+  border: var(--white);
+}
+
+.toggle-button {
+  border-radius: 50%;
+  background-color: var(--white);
+  border-color: transparent;
+  opacity: 0.8;
+  padding: 5px;
+}
+
+.toggle-button.camera-button {
+  margin-right: 5px;
+}
+
+.toggle-button.microphone-button {
+  margin-left: 5px;
+}
+
+.form-block {
+  display: flex;
+  justify-content: end;
+}
+
+.join-button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 10px;
+}
+
+.end-button {
+  background-color: var(--red);
+  color: var(--white);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
